@@ -1,0 +1,72 @@
+
+
+################
+InlaModelFit.csv
+posterior means, standard deviations and the different posterior quantiles of the fitted model
+
+
+
+################
+Metapopdata2Anna.csv
+Data used to fit the model. Data from on Jousimo science papers supplementary material.
+Variables:
+"ID" 		=patch id                   
+"Year"  	=year                
+"Longitude"     =coordinate        
+"Latitude"              
+"PA"            = Pathogen presence in the patch (current year)
+"PAPrev"            = Pathogen presence in the patch (previous year)      
+"road_PA"          = If the patch has road intersecting with it      
+"Distance_to_shore"  = Distance to nearest shore (hopefully in meters?)       
+"Habitat.boundary_open" = Science paper has the definition?
+"Plant.dryness"   = The surveyed measure for plant dryness   
+"Patch.shadow"   = Science paper has the definition, perhaps related to habitat boundary?      
+"Rainfall_August"  = The monthly rainfall computed from the satellite data        
+"Rainfall_July"  = The monthly rainfall computed from the satellite data        
+"Sh"          = The host connectivity measure from the science paper.            
+"PatchArea"  = total area of the patch (the area of the polygon defining the patch boundaries)           
+"Hostm2"     = Host coverage in the patch at the current year           
+"Hostm2Prev"  = Host coverage in the patch at the previous year          
+"ShCat"       = Host connectivity categories based on the 0.2 and 0.8 quantiles           
+"PropDryPrev"   = Proportion of dry host plants previous year       
+"PropDry"          = Proportion of dry host plants this year     
+"PathPresence"      = Pathogen was at the population either this year of the previous year
+
+
+
+
+################
+PhenotypeCodes.csv
+Phenotype = the id of the phenotype (with this key you can link the phenotype to the PhenotypeDiversity.csv
+Description = string describing the resistance profile. '0000' means susceptible to all 4 pathogen strains, '0010' means resistant only towards a3 pathogen. 
+a1 = susceptible/resistant to the pathogen strain 1 (0 = susceptible, 1= resistant)
+a2 = susceptible/resistant to the pathogen strain 2 (0 = susceptible, 1= resistant)
+a3 = ...
+a4 = ...
+
+
+
+
+################
+PhenotypeDiversity.csv
+A matrix giving counts of how many times each Phenotype (in rows) (see PhenotypeCodes.csv) was observed in each of Layla's populations (in columns, population id being the actual patch id).
+In the bottom row the population categories are given:
+HSU = High connectivity, uninfected
+LSU = Low connectivity, uninfected
+HSI = High connectivity, infected
+LSI = Low connectivity, infected. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
